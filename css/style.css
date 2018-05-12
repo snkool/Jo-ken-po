@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    padding: 0;
+    margin: 0;
+	margin-top: -10;
+}
+
+/*Estilo do texto da box do placar*/
+h1.ex1{
+    font-family: 'Roboto', sans-serif;
+    float:left;
+    margin-left:7px;
+    margin-top:14px;
+    color: white;
+}
+
+h1.pl{
+    font-family: 'Roboto', sans-serif;
+    float:left;
+    margin-left: 13px;
+    margin-top:14px;
+    color: white;
+}
+
+.box-wpn{
+    float:left;
+    width:100px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top:20px;
+}
+
+h1.wpn{
+    font-family: 'Roboto', sans-serif;
+    color: #e9363c;
+    margin-top:15px;
+    text-align: center;
+    font-size: 23px;
+}
+
+h1.wpn-win{
+    font-family: 'Roboto', sans-serif;
+    color: #fd970b;
+    margin-top:15px;
+    text-align: center;
+    font-size: 23px;
+}
+
+h1.ex2{
+    font-family: 'Roboto', sans-serif;
+    float:right;
+    margin-right:25px;
+    margin-top:14px;
+    color: white;
+}
+
+h1.pl2{
+    font-family: 'Roboto', sans-serif;
+    float:right;
+    margin-right:13px;
+    margin-top:14px;
+    color: white;
+}
+
+.box-wpn2{
+    float:right;
+    width:100px;
+    height: 40px;
+    margin-right: 15px;
+    margin-top:20px;
+}
+
+h1.wpn2{
+    font-family: 'Roboto', sans-serif;
+    color: #e9363c;
+    margin-top:15px;
+    text-align: center;
+    font-size: 23px;
+}
+
+h1.wpn-win2{
+    font-family: 'Roboto', sans-serif;
+    color: #fd970b;
+    margin-top:15px;
+    text-align: center;
+    font-size: 23px;
+}
+
+/*Header*/
+body{
+    background: url("../img/background.png");
+    background-repeat:repeat-x;
+    background-position: top;
+    background-color: #693e56;
+	overflow:hidden;
+}
+
+/*Header - Logo*/
+
+#logo{
+    background: url("../img/logo.png");
+    width: 514px;
+    height: 121px;
+	margin-top: 25px;
+}
+
+#logo:hover{
+    opacity: 0.85;
+}
+
+/*Menu*/
+
+#menu{
+    width: 189px;
+    height: 228px;
+    float:left;
+    margin-left: -175px;
+    margin-top: 84px;
+}
+
+.btn-jogar{
+    width: 189px;
+    height: 46px;
+    background: url(../img/menu.png);
+    margin-bottom: 45px;
+    transition: transform .2s; /* Animation */
+}
+
+.btn-jogar:hover{
+    transform: scale(1.08);
+}
+
+.btn-regras{
+    width: 189px;
+    height: 46px;
+    background: url(../img/menu.png);
+    margin-bottom: 45px;
+    transition: transform .1s; /* Animation */
+}
+
+.btn-regras:hover{
+    transform: scale(1.08);
+}
+
+.btn-contato{
+    width: 189px;
+    height: 46px;
+    background: url(../img/menu.png);
+    transition: transform .2s; /* Animation */
+}
+
+.btn-contato:hover{
+    transform: scale(1.1);
+}
+
+/*Texto do Menu*/
+
+h2.mn1-jg{
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 72px;
+    margin-top: -28px;
+    text-shadow: 1px 1px 1px #000;
+    transition: color .1s; /* Animation */
+    position: absolute;
+}
+
+h2.mn1-rg{
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 67px;
+    margin-top: -28px;
+    text-shadow: 1px 1px 1px #000;
+    transition: color .1s; /* Animation */
+    position: absolute;
+}
+
+h2.mn1-ct{
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 60px;
+    margin-top: -28px;
+    text-shadow: 1px 1px 1px #000;
+    transition: color .1s; /* Animation */
+    position: absolute;
+}
+
+h2.mn1-jg:hover, h2.mn1-rg:hover, h2.mn1-ct:hover{
+    color: #ffdb4d;
+}
+
+/*Box do placar*/
+.box-placar{
+    background: url("../img/box-placar.png");
+    width: 600px;
+    height: 81px;
+}
+
+/*Animaçao da moeda*/
+@keyframes zoom {
+  0% {
+    transform: scale(0);;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.win-1{
+    background: url("../img/winner+1.gif");
+    width: 75px;
+    height: 60px;
+    position: absolute;
+    margin-left: 145px;
+    margin-top:8px;
+     animation: 0.3s ease-out 0s 1 zoom;
+}
+
+.win-2{
+    background: url("../img/winner+1.gif");
+    width: 75px;
+    height: 60px;
+    position: absolute;
+    margin-left: 770px;
+    margin-top: 9px;
+     animation: 0.3s ease-out 0s 1 zoom;
+}
+
+
+/*Container*/
+#box{
+    background: url("../img/box.png");
+    background-position: center;
+    width: 993px;
+    height: 502px;
+    margin-top: 38px;
+    
+}
+
+/*Char. Pedra, papel e tesoura*/
+.pedra{ 
+    float:left;
+    margin-left:85px;
+    margin-top:3px;
+    background: url(../img/pedra.png);
+    background-repeat: no-repeat;
+    width:218px;
+    height:365px;
+}
+
+.pedra:hover{
+    opacity: 0.95;
+}
+
+.papel{
+    float:left;
+    margin-left:68px;
+    margin-top:3px;
+    background: url(../img/papel.png);
+    background-repeat: no-repeat;
+    width:218px;
+    height:365px;
+}
+
+.papel:hover{
+    opacity: 0.95;
+}
+
+
+.tesoura{
+    float:left;
+    margin-left:68px;
+    margin-top:3px;
+    background: url(../img/tesoura.png);
+    background-repeat: no-repeat;
+    width:218px;
+    height:365px;
+}
+
+.tesoura:hover{
+    opacity: 0.95;
+}
+
+/*Estilo do botao*/
+.button {
+    background: -webkit-linear-gradient(top, rgba(182,211,83,1) 0%,rgba(149,178,52,1) 100%);
+    border: none;
+    color: white;
+    margin-top: 317px;
+    width:218px;
+    height:48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border: black solid 1px;
+}
+
+.button:hover{
+   opacity: 0.85;
+}
+
+/*Pagina - Regras*/
+#container{
+    width: 792px;
+    height: 423px;
+    margin-top: -273px;
+    margin-left: 270px;
+    background: url(../img/container.png);
+}
+
+p.pcont{
+    color: white;
+    margin-top: 70px;
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 12pt;
+    width: 1000px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+}
+
+.color_box{
+    width:740px;
+    height: 43px;
+    float: left;
+    background: url(../img/cm-fun.png);
+    margin-top: 360px;
+    margin-left: 28px;
+}
+
+/*Pagina - Contato*/
+#container2{
+    width: 787px;
+    height: 462px;
+    margin-top: -273px;
+    margin-left: 272px;
+    
+    background: url(../img/container2.png);
+}
+
+#box-social{ 
+    width:280px;
+    height:75px;
+    margin-top: 210px;
+    margin-left: 257px;
+    position: absolute;
+}
+.twitter{
+    background: url(../img/twitter.png);
+    width: 75px;
+    height: 73px;
+    float: left;
+}
+
+.twitter:hover{
+    background: url(../img/twitter-hover.png);
+    width: 75px;
+    height: 73px;
+}
+
+.github{
+    background: url(../img/github.png);
+    width: 75px;
+    height: 73px;
+    float: left;
+    margin-left: 25px;
+}
+
+.github:hover{
+    background: url(../img/github-hover.png);
+    width: 75px;
+    height: 73px;
+}
+
+.ytb{
+    background: url(../img/ytb.png);
+    width: 75px;
+    height: 73px;
+    float: left;
+    margin-left: 25px;
+}
+
+.ytb:hover{
+    background: url(../img/ytb-hover.png);
+    width: 75px;
+    height: 73px;
+}

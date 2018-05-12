@@ -1,0 +1,78 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+        <title>Jogar</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="script/script.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+    
+	<body>
+        <center>    
+           <a href=""><div id="logo"></div></a>
+
+            <div id="box">
+                <div id="menu">
+                    <a href="index.html">
+                        <div class="btn-jogar">
+                            <h2 class="mn1-jg">Jogar</h2>
+                        </div>
+                    </a>
+
+                    <a href="regras.html">
+                        <div class="btn-regras">
+                            <h2 class="mn1-rg">Regras</h2>
+                        </div>
+                    </a>
+
+                    <a href="contato.html">
+                        <div class="btn-contato">
+                            <h2 class="mn1-ct">Contato</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="win" class=""></div>
+                <div id="win2" class=""></div>
+                <div class="box-placar">
+                    <div class="box-wpn">
+                        <center>
+                            <h1 class="wpn" id="ePlayer">- -</h1>
+                        </center>
+                    </div>
+
+                    <div class="box-wpn2">
+                        <center>
+                            <h1 class="wpn2" id="eIA">- -</h1>
+                        </center>
+                    </div>
+
+                    <h1 class="ex1">Você</h1>   
+                    <h1 class="ex2">CPU</h1> 
+                    <h1 class="pl" id="ptPlayer">0</h1>
+                    <h1 class="pl2" id="ptIA">0</h1> 
+                </div>
+
+                <a href="#" onclick="pedra();">
+                    <div class="pedra">
+                        <button class="button">Pedra</button>
+                    </div>
+                </a>
+
+                <a href="#" onclick="papel();">
+                    <div class="papel">
+                        <button class="button">Papel</button>
+                    </div>
+                </a>
+
+                <a href="#" onclick="tesoura();">
+                    <div class="tesoura">
+                        <button class="button">Tesoura</button>
+                    </div>
+                </a>
+            </div>
+        </center> 
+	</body>
+</html>
